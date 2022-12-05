@@ -1,0 +1,389 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Сolors of layout */
+:root {
+  --pb-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --suc-color: #31d0aa;
+  --txt-color: #434455;
+  --subtxt-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --additional-color: #ffffff;
+}
+
+/* Main block */
+
+.header-padding {
+  padding: 24px 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--subtxt-color);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+}
+
+/* Style of LOGO in header and in footer for all pages*/
+.logo-web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: var(--pb-color);
+}
+
+.logo-web > .logo-studio-header {
+  color: var(--dark-color);
+}
+
+.logo-web > .logo-studio-footer {
+  color: var(--light-color);
+}
+
+/* Start of styles for file "idex.html" */
+
+/* Styles of header lincs*/
+.header-links {
+  display: flex;
+  margin: 0 0 0 77px;
+  gap: 40px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.header-links .header-link:hover,
+.header-links .header-link:focus {
+  color: var(--pb-color);
+}
+
+/* Styles of header contacts*/
+.header-contacts {
+  display: flex;
+  margin: 0 0 0 auto;
+  gap: 40px;
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--txt-color);
+}
+.header-contacts .header-contact:hover,
+.header-contacts .header-contact:focus {
+  color: var(--pb-color);
+}
+
+/* Styles of HERO */
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 192px 0;
+  background-color: var(--dark-color);
+}
+.title-hero {
+  text-align: center;
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.0714;
+  letter-spacing: 0.02em;
+  color: var(--additional-color);
+}
+.button-hero {
+  padding: 16px 32px;
+  background: var(--pb-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.04em;
+  color: var(--additional-color);
+  cursor: pointer;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background: var(--pb-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+.button-hero:active {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* MAIN BACKGROUND */
+
+.main-bckgrnd {
+  background-color: var(--additional-color);
+}
+/* CONTAINER */
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SECTION */
+.section {
+  padding: 120px 0;
+}
+
+/* SCILLS CARDS */
+
+.scills-title-visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.scills-card-set {
+  display: flex;
+  gap: 24px;
+}
+
+.scills-card-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.scills-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.scills-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--txt-color);
+}
+
+/* PHOTO CARDS */
+
+.photo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1111;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.photo-card-set {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+/* TEAM CARDS */
+
+.section-team {
+  background-color: var(--light-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1111;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.team-card-set {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.unit-of-team {
+  background: var(--additional-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 32px;
+}
+.unit-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+
+  text-align: center;
+}
+.unit-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--txt-color);
+
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer-style {
+  background-color: var(--dark-color);
+  padding: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-first-li {
+  width: 264px;
+}
+
+.text-of-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-top: 16px;
+}
+
+/* Finish of styles for file "idex.html"*/
+
+/* Start of styles for file "portfolio.html" */
+/* partly will be use styles for file "index.html"*/
+
+.btns-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  padding: 96px 0 72px 0;
+}
+.button-portfolio {
+  padding: 8px 16px;
+  background: var(--light-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--pb-color);
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background: #4d5ae5;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--additional-color);
+}
+.portfolio-title-visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+
+.card-portfolio {
+  width: 360px;
+  background: var(--additional-color);
+  border: 0.5px solid var(--light-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.card-txt-padding {
+  padding: 16px 32px;
+}
+.card-link {
+  display: none;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--txt-color);
+  margin-top: 8px;
+  padding: 0;
+}
