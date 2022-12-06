@@ -42,11 +42,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
- 
 }
 
 .header-shadow {
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-nav {
   display: flex;
@@ -57,7 +57,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   display: inline-block;
 }
 
-.logo > .logo-web {
+.logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -125,7 +125,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .title-hero {
   margin: 0 auto 48px auto;
   text-align: center;
-  max-width: 500px;
+  max-width: 526px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.0714;
@@ -358,11 +358,18 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   background: var(--additional-color);
 }
 
-.card-txt-padding {
-  padding: 16px 32px;
-  border: 0.5px solid #f4f4fd;
+.card-shadow{
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-txt-padding {
+  padding: 32px 16px;
+  border-bottom: 0.5px solid var(--light-color);
+  border-left: 0.5px solid var(--light-color);
+  border-right: 0.5px solid var(--light-color);
+
 }
 
 .card-title {
