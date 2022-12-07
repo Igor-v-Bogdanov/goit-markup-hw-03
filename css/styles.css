@@ -9,6 +9,7 @@ body {
   color: var(--dark-color);
 }
 
+a,
 h1,
 h2,
 h3,
@@ -20,6 +21,13 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* VAR (colors of project) */
@@ -48,6 +56,7 @@ ul {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -89,6 +98,7 @@ ul {
   color: var(--dark-color);
   padding: 24px 0;
 }
+
 .header-links .header-link:hover,
 .header-links .header-link:focus {
   color: var(--pb-color);
@@ -109,6 +119,7 @@ ul {
   color: var(--txt-color);
   padding: 24px 0;
 }
+
 .header-contacts .header-contact:hover,
 .header-contacts .header-contact:focus {
   color: var(--pb-color);
@@ -122,6 +133,7 @@ ul {
   background-color: var(--dark-color);
   text-align: center;
 }
+
 .title-hero {
   margin: 0 auto 48px auto;
   text-align: center;
@@ -132,9 +144,10 @@ ul {
   letter-spacing: 0.02em;
   color: var(--additional-color);
 }
+
 .button-hero {
   background: var(--pb-color);
-  border-color: var(--pb-color);
+  border-color: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
@@ -146,6 +159,7 @@ ul {
   color: var(--additional-color);
   cursor: pointer;
 }
+
 .button-hero:hover,
 .button-hero:focus {
   background: var(--pb-color);
@@ -153,6 +167,7 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 4px;
 }
+
 .button-hero:active {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -180,8 +195,11 @@ ul {
 
 .scills-card-set {
   display: flex;
-  flex-basis: calc((100% - 3 * 24px) / 4);
   gap: 24px;
+}
+
+.scills-card-set > .scills-card-gap {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .scills-title {
@@ -192,6 +210,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
+
 .scills-text {
   margin-top: 8px;
   font-weight: 400;
@@ -217,14 +236,12 @@ ul {
 
 .photo-card-set {
   display: flex;
-  flex-basis: calc((100% - 2 * 24px) / 3);
   gap: 24px;
   margin-top: 72px;
 }
 
-.image-size {
-  display: block;
-  max-width: 100%;
+.photo-card-set > .image-size {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 /* TEAM CARDS */
@@ -244,21 +261,23 @@ ul {
 
 .team-card-set {
   display: flex;
-  flex-basis: calc((100% - 3 * 24px) / 4);
   gap: 24px;
   margin-top: 72px;
 }
 
-.unit-of-team {
+.team-card-set > .unit-of-team {
+  flex-basis: calc((100% - 3 * 24px) / 4);
   background: var(--additional-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-card-text {
   padding: 32px 16px;
   text-align: center;
 }
+
 .unit-title {
   font-weight: 700;
   font-size: 20px;
@@ -266,6 +285,7 @@ ul {
   color: var(--dark-color);
   margin-bottom: 8px;
 }
+
 .unit-text {
   font-weight: 400;
   font-size: 16px;
@@ -308,6 +328,7 @@ ul {
   gap: 24px;
   margin-bottom: 72px;
 }
+
 .button-portfolio {
   padding: 8px 16px;
   background: var(--light-color);
@@ -331,6 +352,7 @@ ul {
   border-color: transparent;
   color: var(--additional-color);
 }
+
 .portfolio-title-visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -346,19 +368,16 @@ ul {
 
 .grid-cards {
   display: flex;
-  flex-basis: calc((100% - 2 * 24px) / 3);
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  margin: 0;
 }
 
-.card-portfolio {
-  max-width: 360px;
-  background: var(--additional-color);
+.grid-cards > .card-portfolio {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.card-shadow{
+.card-shadow {
   display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -369,7 +388,6 @@ ul {
   border-bottom: 0.5px solid var(--light-color);
   border-left: 0.5px solid var(--light-color);
   border-right: 0.5px solid var(--light-color);
-
 }
 
 .card-title {
@@ -378,6 +396,7 @@ ul {
   line-height: 1.2;
   color: var(--dark-color);
 }
+
 .card-text {
   font-weight: 400;
   font-size: 16px;
